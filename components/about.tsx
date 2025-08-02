@@ -74,8 +74,8 @@ export default function About() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
-            Software Engineer (Andela x Safaricom), building solutions that
-            impact millions of lives across Kenya.
+            Cloud Infrastructure & DevOps Engineer, building resilient and 
+            scalable cloud solutions that power modern applications.
           </motion.h2>
 
           {/* Secondary Statement */}
@@ -91,9 +91,9 @@ export default function About() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
-            Part of Africa's elite tech talent network, passionate about
-            continuous learning, community building, and turning complex
-            problems into elegant code.
+            Passionate about infrastructure automation, cloud security, and 
+            creating DevOps pipelines that enable teams to deploy with confidence 
+            and maintain 99.9% uptime.
           </motion.p>
 
           {/* Professional Snapshot */}
@@ -108,8 +108,8 @@ export default function About() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
-            Currently delivering KES 1.1B+ in business value through innovative
-            frontend solutions.
+            Currently optimizing cloud costs by 70% and maintaining infrastructure 
+            serving millions of users across East Africa.
           </motion.p>
         </div>
 

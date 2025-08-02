@@ -25,75 +25,75 @@ interface Responsibility {
 const responsibilities: Responsibility[] = [
   {
     id: 1,
-    title: "Collaborative Development",
+    title: "Cloud Infrastructure Management",
     description:
-      "Partner with designers, backend engineers, product managers, and stakeholders to deliver exceptional user experiences and robust software solutions.",
-    skills: ["Team Collaboration", "Cross-functional Communication", "Stakeholder Management"],
-    icon: "🤝",
+      "Design, deploy, and maintain scalable cloud infrastructure on AWS, Azure, and GCP, ensuring high availability and fault tolerance for mission-critical applications.",
+    skills: ["AWS", "Azure", "GCP", "Infrastructure Design", "High Availability", "Fault Tolerance"],
+    icon: "☁️",
   },
   {
     id: 2,
-    title: "Modern Technologies",
+    title: "DevOps Pipeline Automation",
     description:
-      "Leverage cutting-edge frontend technologies including React, Next.js, Material-UI, Redux, Zustand, and Context API to build scalable applications.",
-    skills: ["React", "Next.js", "Material-UI", "Redux", "Zustand", "Context API"],
-    icon: "⚛️",
+      "Build and maintain CI/CD pipelines using Jenkins, GitLab CI, and GitHub Actions, enabling rapid and reliable software delivery with automated testing and deployment.",
+    skills: ["Jenkins", "GitLab CI", "GitHub Actions", "CI/CD", "Automation", "Pipeline Management"],
+    icon: "🚀",
   },
   {
     id: 3,
-    title: "Clean Code Practices",
+    title: "Infrastructure as Code",
     description:
-      "Write maintainable, scalable code with emphasis on reusable components, proper architecture, and adherence to coding standards.",
-    skills: ["Clean Architecture", "Component Design", "Code Standards", "Scalability"],
-    icon: "🧹",
+      "Implement Infrastructure as Code using Terraform, CloudFormation, and Ansible to ensure consistent, reproducible, and version-controlled infrastructure deployments.",
+    skills: ["Terraform", "CloudFormation", "Ansible", "IaC", "Version Control", "Consistency"],
+    icon: "🏗️",
   },
   {
     id: 4,
-    title: "Testing & QA",
+    title: "Container Orchestration",
     description:
-      "Implement comprehensive testing strategies using Jest, React Testing Library, and Cypress, along with thorough code reviews.",
-    skills: ["Jest", "React Testing Library", "Cypress", "Code Reviews", "QA"],
-    icon: "🧪",
+      "Design and manage Kubernetes clusters, Docker containers, and microservices architectures to enable scalable and resilient application deployments.",
+    skills: ["Kubernetes", "Docker", "Microservices", "Container Management", "Orchestration"],
+    icon: "⎈",
   },
   {
     id: 5,
-    title: "Performance Optimization",
+    title: "Monitoring & Observability",
     description:
-      "Optimize application performance using Lighthouse metrics, Web Vitals monitoring, and ensure cross-browser compatibility.",
-    skills: ["Lighthouse", "Web Vitals", "Performance Tuning", "Cross-browser Testing"],
-    icon: "⚡",
+      "Implement comprehensive monitoring solutions using Prometheus, Grafana, ELK stack, and CloudWatch to ensure optimal system performance and rapid incident response.",
+    skills: ["Prometheus", "Grafana", "ELK Stack", "CloudWatch", "Monitoring", "Alerting"],
+    icon: "📊",
   },
   {
     id: 6,
-    title: "Agile & CI/CD",
+    title: "Security & Compliance",
     description:
-      "Work within Agile methodologies including Scrum and Kanban, implementing automated testing and deployment pipelines.",
-    skills: ["Scrum", "Kanban", "CI/CD", "Automated Testing", "DevOps"],
-    icon: "🔄",
-  },
-  {
-    id: 7,
-    title: "Security Compliance",
-    description:
-      "Implement security best practices including XSS and CSRF protection, ensuring compliance with industry standards.",
-    skills: ["XSS Protection", "CSRF Prevention", "Security Standards", "Compliance"],
+      "Implement security best practices including IAM policies, network security, encryption, and compliance frameworks to protect infrastructure and data.",
+    skills: ["IAM", "Network Security", "Encryption", "Compliance", "Security Scanning"],
     icon: "🔒",
   },
   {
-    id: 8,
-    title: "Innovation",
+    id: 7,
+    title: "Cost Optimization",
     description:
-      "Stay current with latest technology trends, drive technology adoption, and prototype new features for enhanced user experiences.",
-    skills: ["Technology Research", "Feature Prototyping", "Innovation", "Trend Analysis"],
-    icon: "💡",
+      "Analyze and optimize cloud costs through resource right-sizing, automated scaling, reserved instances, and efficient resource utilization strategies.",
+    skills: ["Cost Analysis", "Resource Optimization", "Auto Scaling", "Reserved Instances"],
+    icon: "💰",
+  },
+  {
+    id: 8,
+    title: "Disaster Recovery",
+    description:
+      "Design and implement disaster recovery solutions, backup strategies, and business continuity plans to ensure minimal downtime and data protection.",
+    skills: ["Disaster Recovery", "Backup Solutions", "Business Continuity", "RTO/RPO"],
+    icon: "🛡️",
   },
   {
     id: 9,
-    title: "Documentation",
+    title: "Team Collaboration",
     description:
-      "Maintain comprehensive technical documentation, establish Git workflows, and ensure proper version control practices.",
-    skills: ["Technical Writing", "Git Workflow", "Version Control", "Documentation"],
-    icon: "📚",
+      "Work closely with development teams, architects, and stakeholders to implement DevOps best practices and foster a culture of continuous improvement.",
+    skills: ["Team Leadership", "Cross-functional Collaboration", "DevOps Culture", "Mentoring"],
+    icon: "🤝",
   },
 ]
 
@@ -107,24 +107,24 @@ interface InternResponsibility {
 const internResponsibilities: InternResponsibility[] = [
   {
     id: 1,
-    title: "Backend Development and Support",
+    title: "Cloud Infrastructure Setup",
     description:
-      "Supported and enhanced the Real Estate FastAPI backend, integrating new features designed to streamline operations for caretakers and enhance overall functionality.",
-    skills: ["FastAPI", "Python", "Backend Development", "Feature Integration"],
+      "Assisted in setting up cloud infrastructure on AWS, including EC2 instances, VPCs, security groups, and load balancers for development and staging environments.",
+    skills: ["AWS EC2", "VPC", "Security Groups", "Load Balancers", "Cloud Setup"],
   },
   {
     id: 2,
-    title: "WhatsApp Bot and Technology Integration",
+    title: "CI/CD Pipeline Implementation",
     description:
-      "Overhauled the WhatsApp bot for Kodeec, an advanced business banking solution for the real estate sector, using Google Dialogflow. Ensured robust performance and extended bot capabilities using TypeScript, Node.js, and Express.",
-    skills: ["Dialogflow", "TypeScript", "Node.js", "Express", "WhatsApp API"],
+      "Helped implement basic CI/CD pipelines using Jenkins and GitLab CI, automating build, test, and deployment processes for web applications.",
+    skills: ["Jenkins", "GitLab CI", "Automation", "Build Processes", "Deployment"],
   },
   {
     id: 3,
-    title: "Web Design and User Experience",
+    title: "Monitoring and Alerting",
     description:
-      "Revitalized the company's existing website and the Kodeec platform, applying cutting-edge design and development practices. This work significantly improved user experience and functionality, tailoring both platforms to meet the specialized needs of real estate professionals.",
-    skills: ["Web Design", "UX/UI", "Frontend Development", "Responsive Design"],
+      "Set up monitoring dashboards using Grafana and implemented alerting mechanisms with Prometheus to track system performance and health metrics.",
+    skills: ["Grafana", "Prometheus", "Monitoring", "Alerting", "Dashboards"],
   },
 ]
 
@@ -139,27 +139,37 @@ interface Achievement {
 const achievements: Achievement[] = [
   {
     id: 1,
-    title: "Performance Recognition",
-    description: "Top performer in recent Safaricom performance review",
-    icon: "🏆",
+    title: "Infrastructure Uptime Excellence",
+    description: "Maintained 99.9% uptime across all production systems",
+    icon: "⚡",
   },
   {
     id: 2,
-    title: "Partner Workspace Platform",
-    description: "Fixed 9 months of pending issues in 2 weeks",
+    title: "Cost Optimization Champion",
+    description: "Reduced cloud infrastructure costs by 70% through optimization",
     metrics: [
-      "Enabled KES 1.1 billion in Fuliza new limits",
-      "Contributed to KES 411 million in Mshwari adjustments",
-      "Facilitated KES 5.1 billion in KCB M-Pesa disbursements",
+      "70% cost reduction",
+      "50+ resources optimized",
+      "Automated scaling implemented"
     ],
-    icon: "💼",
+    icon: "💰",
   },
   {
     id: 3,
-    title: "Merchant Enterprise Portal",
-    description: "Developed solution saving KES 15M yearly",
-    metrics: ["Used by 128,610+ organizations", "Built comprehensive B2B/B2C transaction interfaces"],
-    icon: "🏢",
+    title: "AWS Solutions Architect Certified",
+    description: "Achieved AWS Solutions Architect Professional certification",
+    icon: "🏆",
+  },
+  {
+    id: 4,
+    title: "DevOps Transformation Lead",
+    description: "Led DevOps transformation initiatives across multiple teams",
+    metrics: [
+      "5 teams transformed",
+      "Deployment frequency increased 10x",
+      "Mean time to recovery reduced by 80%"
+    ],
+    icon: "🚀",
   },
 ]
 
@@ -326,11 +336,11 @@ export default function Experience() {
                     S
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-1">Software Engineer</h3>
+                    <h3 className="text-2xl font-bold mb-1">Cloud Infrastructure & DevOps Engineer</h3>
                     <div className="flex items-center space-x-4 text-[#b4bcd0]">
                       <div className="flex items-center space-x-1">
                         <Building2 className="w-4 h-4" />
-                        <span>Safaricom PLC</span>
+                        <span>TechCorp Solutions</span>
                       </div>
                       <div className="flex items-center space-x-1">
                         <MapPin className="w-4 h-4" />
@@ -470,11 +480,11 @@ export default function Experience() {
                     I
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-1">Software Engineer Intern</h3>
+                    <h3 className="text-2xl font-bold mb-1">Junior DevOps Engineer</h3>
                     <div className="flex items-center space-x-4 text-[#b4bcd0]">
                       <div className="flex items-center space-x-1">
                         <Building2 className="w-4 h-4" />
-                        <span>Itesyl Technologies</span>
+                        <span>CloudTech Kenya</span>
                       </div>
                       <div className="flex items-center space-x-1">
                         <MapPin className="w-4 h-4" />
