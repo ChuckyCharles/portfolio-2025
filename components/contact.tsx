@@ -133,25 +133,25 @@ export default function Contact() {
     {
       id: "email",
       label: "Email",
-      value: "eochieng9448@gmail.com",
+      value: "charles.ochieng@email.com",
       icon: <Mail className="w-5 h-5" />,
-      action: () => copyToClipboard("eochieng9448@gmail.com", "email"),
+      action: () => copyToClipboard("charles.ochieng@email.com", "email"),
       copyable: true,
     },
     {
       id: "phone",
       label: "Phone",
-      value: "+254 7** *** **7",
+      value: "+254 7** *** **8",
       icon: <Phone className="w-5 h-5" />,
       action: () => {
         if (typeof window !== "undefined") {
           if (window.innerWidth <= 768) {
-            window.location.href = "tel:+254768144877";
+            window.location.href = "tel:+254768144878";
           } else {
-            copyToClipboard("+254 7** *** **7", "phone");
+            copyToClipboard("+254 7** *** **8", "phone");
           }
         } else {
-          copyToClipboard("+254 7** *** **7", "phone");
+          copyToClipboard("+254 7** *** **8", "phone");
         }
       },
       copyable: true,
@@ -171,25 +171,25 @@ export default function Contact() {
       name: "LinkedIn",
       href:
         process.env.NEXT_PUBLIC_LINKEDIN_URL ||
-        "https://www.linkedin.com/in/ondiek-elijah/",
+        "https://www.linkedin.com/in/charles-ochieng-devops/",
       icon: <Linkedin className="w-6 h-6" />,
       description: "Professional network",
-      followers: "2106+ connections",
+      followers: "1500+ connections",
     },
     {
       name: "GitHub",
       href:
-        process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/elijahondiek",
+        process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/charles-ochieng",
       icon: <Github className="w-6 h-6" />,
-      description: "Code repositories",
-      followers: "116+ repositories",
+      description: "DevOps repositories",
+      followers: "85+ repositories",
     },
     {
       name: "Twitter",
-      href: process.env.NEXT_PUBLIC_TWITTER_URL || "https://x.com/0chibo_",
+      href: process.env.NEXT_PUBLIC_TWITTER_URL || "https://x.com/charles_ochieng",
       icon: <Twitter className="w-6 h-6" />,
-      description: "Tech insights",
-      followers: "2630+ followers",
+      description: "Cloud & DevOps insights",
+      followers: "1200+ followers",
     },
   ];
 
@@ -389,8 +389,8 @@ export default function Contact() {
             <div className="space-y-4">
               <div>
                 <p className="text-[#b4bcd0] text-sm">Current Role</p>
-                <p className="font-medium">Software Engineer</p>
-                <p className="text-[#00d4ff] text-sm">@ Safaricom PLC</p>
+                <p className="font-medium">Cloud Infrastructure & DevOps Engineer</p>
+                <p className="text-[#00d4ff] text-sm">@ TechCorp Solutions</p>
               </div>
 
               <div>

@@ -13,46 +13,54 @@ const inter = Inter({
 // Base URL for your site - use relative URLs for local development
 const isProduction = process.env.NODE_ENV === 'production';
 const baseUrl = isProduction 
-  ? 'https://elijah-ondiek.com' 
+  ? 'https://charles-ochieng.com' 
   : ''; // Use relative URLs in development
 
   export const metadata: Metadata = {
     title: {
-      default: "Elijah Ondiek | Software Engineer",
-      template: "%s | Elijah Ondiek"
+      default: "Charles Ochieng | Cloud Infrastructure & DevOps Engineer",
+      template: "%s | Charles Ochieng"
     },
-    description: "Explore the work of Elijah Ondiek, a passionate software engineer specializing in scalable, high-performance full-stack applications built with React, Next.js, TypeScript, and Python. Delivering user-centric digital solutions with clean code and modern architecture.",
+    description: "Explore the expertise of Charles Ochieng, a seasoned Cloud Infrastructure and DevOps Engineer specializing in scalable cloud solutions, automation, CI/CD pipelines, and infrastructure as code. Building resilient, secure, and cost-effective cloud architectures.",
     
     keywords: [
-      "Elijah Ondiek",
-      "Software Engineer",
-      "Web Engineer",
-      "Full Stack Developer",
-      "Frontend Developer",
-      "Backend Developer",
-      "React Developer",
-      "Next.js Developer",
-      "JavaScript Developer",
-      "TypeScript Developer",
-      "Python Developer",
-      "Node.js Developer",
-      "Tailwind CSS",
-      "Web Performance Optimization",
-      "Open Source Contributor",
-      "Modern Software Development",
-      "Web Applications",
-      "Clean Code Architecture",
-      "Digital Solutions",
-      "Kenya Software Engineer",
-      "East Africa Developer",
-      "Scalable Web Apps"
+      "Charles Ochieng",
+      "Cloud Infrastructure Engineer",
+      "DevOps Engineer",
+      "Cloud Architect",
+      "AWS Engineer",
+      "Azure Engineer",
+      "Google Cloud Platform",
+      "Kubernetes Engineer",
+      "Docker Specialist",
+      "Terraform Expert",
+      "Infrastructure as Code",
+      "CI/CD Pipelines",
+      "Cloud Automation",
+      "Site Reliability Engineer",
+      "Cloud Security",
+      "Microservices Architecture",
+      "Container Orchestration",
+      "Cloud Migration",
+      "DevOps Automation",
+      "Infrastructure Monitoring",
+      "Cloud Cost Optimization",
+      "Scalable Cloud Solutions",
+      "Jenkins",
+      "GitLab CI",
+      "Ansible",
+      "Prometheus",
+      "Grafana",
+      "ELK Stack",
+      "Kenya DevOps Engineer",
+      "East Africa Cloud Engineer"
     ],
     
-    authors: [{ name: "Elijah Ondiek", url: baseUrl }],
-    creator: "Elijah Ondiek",
-    publisher: "Elijah Ondiek",
+    authors: [{ name: "Charles Ochieng", url: baseUrl }],
+    creator: "Charles Ochieng",
+    publisher: "Charles Ochieng",
     generator: 'Next.js',
-    applicationName: "Elijah Ondiek - Software Engineer",
+    applicationName: "Charles Ochieng - Cloud Infrastructure & DevOps Engineer",
     referrer: 'origin-when-cross-origin',
     formatDetection: {
       email: false,
@@ -69,22 +77,22 @@ const baseUrl = isProduction
       type: 'website',
       locale: 'en_US',
       url: baseUrl,
-      title: "Elijah Ondiek | Software Engineer",
-      description: "Discover Elijah Ondiek, a dedicated software engineer crafting innovative full-stack web solutions with React, Next.js, and Python.",
-      siteName: "Elijah Ondiek - Software Engineer",
+      title: "Charles Ochieng | Cloud Infrastructure & DevOps Engineer",
+      description: "Discover Charles Ochieng, an expert Cloud Infrastructure and DevOps Engineer crafting scalable cloud solutions with AWS, Azure, Kubernetes, and modern DevOps practices.",
+      siteName: "Charles Ochieng - Cloud Infrastructure & DevOps Engineer",
       images: [
         {
           url: '/og-image.jpg',
           width: 1200,
           height: 630,
-          alt: "Elijah Ondiek - Professional Software Engineer",  
+          alt: "Charles Ochieng - Professional Cloud Infrastructure & DevOps Engineer",  
           type: 'image/jpeg',
         },
         {
           url: '/og-image-square.jpg',
           width: 1200,
           height: 1200,
-          alt: "Elijah Ondiek - Software & Web Engineer",
+          alt: "Charles Ochieng - Cloud & DevOps Engineer",
           type: 'image/jpeg',
         }
       ],
@@ -93,16 +101,16 @@ const baseUrl = isProduction
     // Twitter metadata
     twitter: {
       card: 'summary_large_image',
-      title: "Elijah Ondiek | Software Engineer",
-      description: "Professional software engineer specializing in modern web technologies, scalable full-stack solutions, and clean architecture.",
-      creator: '@0chibo_',
-      site: '@0chibo_',
+      title: "Charles Ochieng | Cloud Infrastructure & DevOps Engineer",
+      description: "Professional Cloud Infrastructure and DevOps Engineer specializing in scalable cloud architectures, automation, and modern DevOps practices.",
+      creator: '@charles_ochieng',
+      site: '@charles_ochieng',
       images: [
         {
           url: '/og-image.jpg',
           width: 1200,
           height: 630,
-          alt: "Elijah Ondiek - Software Engineer",
+          alt: "Charles Ochieng - Cloud Infrastructure & DevOps Engineer",
         }
       ],
     },
@@ -151,9 +159,9 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": "Elijah Ondiek",
-              "jobTitle": "Software Engineer",
-              "description": "Passionate software engineer specializing in modern web engineering",
+              "name": "Charles Ochieng",
+              "jobTitle": "Cloud Infrastructure & DevOps Engineer",
+              "description": "Expert Cloud Infrastructure and DevOps Engineer specializing in scalable cloud solutions and automation",
               "url": baseUrl,
               "sameAs": [
                 process.env.NEXT_PUBLIC_GITHUB_URL,
@@ -162,12 +170,17 @@ export default function RootLayout({
               ].filter(Boolean),
               "email": process.env.NEXT_PUBLIC_EMAIL,
               "knowsAbout": [
-                "JavaScript",
-                "TypeScript", 
-                "React",
-                "Next.js",
-                "Web Development",
-                "Software Engineering"
+                "Cloud Infrastructure",
+                "DevOps Engineering",
+                "AWS",
+                "Azure", 
+                "Kubernetes",
+                "Docker",
+                "Terraform",
+                "CI/CD Pipelines",
+                "Infrastructure as Code",
+                "Cloud Security",
+                "Monitoring & Observability"
               ],
             })
           }}

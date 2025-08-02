@@ -16,59 +16,59 @@ export default function Hero() {
   // const y = useTransform(scrollY, [0, 300], [0, 100])
 
   // Mission statement words for animated display
-  const missionWords = ["Building", "solutions", "that", "impact", "millions", "of", "lives", "across", "Kenya"]
+  const missionWords = ["Building", "resilient", "cloud", "infrastructure", "that", "scales", "with", "confidence"]
 
   // Floating achievements data with improved colors and styling
   const achievements = [
     {
-      icon: "💰",
-      value: "KES 1.1B+",
-      label: "Business Impact",
+      icon: "☁️",
+      value: "99.9%",
+      label: "Infrastructure Uptime",
       bgColor: "bg-blue-900/90",
       borderColor: "border-blue-500",
       iconBg: "bg-blue-700",
-      delay: 0.2, // Restored delay
+      delay: 0.2,
     },
     {
-      icon: "🏢",
-      value: "128K+",
-      label: "Organizations Served",
+      icon: "🚀",
+      value: "50+",
+      label: "Deployments/Month",
       bgColor: "bg-emerald-900/90",
       borderColor: "border-emerald-500",
       iconBg: "bg-emerald-700",
-      delay: 0.4, // Restored delay
+      delay: 0.4,
     },
     {
-      icon: "🎤",
-      value: "10+",
-      label: "Speaking Events",
+      icon: "⚡",
+      value: "70%",
+      label: "Cost Optimization",
       bgColor: "bg-purple-900/90",
       borderColor: "border-purple-500",
       iconBg: "bg-purple-700",
-      delay: 0.6, // Restored delay
+      delay: 0.6,
     },
     {
       icon: "🏆",
-      value: "Top Performer",
-      label: "Safaricom PLC",
+      value: "AWS Certified",
+      label: "Solutions Architect",
       bgColor: "bg-amber-900/90",
       borderColor: "border-amber-500",
       iconBg: "bg-amber-700",
-      delay: 0.8, // Restored delay
+      delay: 0.8,
     },
   ]
 
-  // Tech stack icons for the animated background - removed delays for better UX
+  // Tech stack icons for the animated background
   const techIcons = [
-    { name: "React", symbol: "⚛️", x: 15, y: 20, size: 24, delay: 0 },
-    { name: "JavaScript", symbol: "JS", x: 85, y: 15, size: 20, delay: 0 },
-    { name: "TypeScript", symbol: "TS", x: 75, y: 85, size: 22, delay: 0 },
-    { name: "Python", symbol: "🐍", x: 10, y: 70, size: 26, delay: 0 },
-    { name: "AWS", symbol: "☁️", x: 60, y: 40, size: 28, delay: 0 },
-    { name: "Node.js", symbol: "🟢", x: 30, y: 90, size: 18, delay: 0 },
-    { name: "GraphQL", symbol: "◢", x: 90, y: 60, size: 20, delay: 0 },
-    { name: "Docker", symbol: "🐳", x: 20, y: 40, size: 22, delay: 0 },
-    { name: "Git", symbol: "⎇", x: 50, y: 75, size: 24, delay: 0 },
+    { name: "AWS", symbol: "☁️", x: 15, y: 20, size: 24, delay: 0 },
+    { name: "Kubernetes", symbol: "⎈", x: 85, y: 15, size: 20, delay: 0 },
+    { name: "Docker", symbol: "🐳", x: 75, y: 85, size: 22, delay: 0 },
+    { name: "Terraform", symbol: "🏗️", x: 10, y: 70, size: 26, delay: 0 },
+    { name: "Jenkins", symbol: "🔧", x: 60, y: 40, size: 28, delay: 0 },
+    { name: "Prometheus", symbol: "📊", x: 30, y: 90, size: 18, delay: 0 },
+    { name: "GitLab", symbol: "🦊", x: 90, y: 60, size: 20, delay: 0 },
+    { name: "Ansible", symbol: "⚙️", x: 20, y: 40, size: 22, delay: 0 },
+    { name: "Grafana", symbol: "📈", x: 50, y: 75, size: 24, delay: 0 },
   ]
 
   // Handle mouse movement for interactive elements
@@ -205,14 +205,14 @@ export default function Hero() {
               className="text-5xl md:text-7xl font-bold tracking-tight text-[var(--text-primary)] pb-1"
               variants={itemVariants}
             >
-              Elijah Ondiek
+              Charles Ochieng
             </motion.h1>
           </div>
 
           {/* Professional title with animated underline */}
           <motion.div variants={itemVariants} className="space-y-1">
-            <h2 className="text-xl md:text-2xl font-medium text-blue-400">Andela Software Engineer</h2>
-            <p className="text-lg text-[var(--text-secondary)]">Currently at Safaricom PLC</p>
+            <h2 className="text-xl md:text-2xl font-medium text-blue-400">Cloud Infrastructure & DevOps Engineer</h2>
+            <p className="text-lg text-[var(--text-secondary)]">Building Scalable Cloud Solutions</p>
           </motion.div>
 
           {/* Mission statement with word-by-word animation */}
@@ -338,7 +338,7 @@ export default function Hero() {
               <Code className="w-4 h-4 mr-2" />
               Tech Stack:
             </div>
-            {["React", "TypeScript", "Node.js", "Python", "AWS"].map((tech, i) => (
+            {["AWS", "Kubernetes", "Docker", "Terraform", "Jenkins"].map((tech, i) => (
               <motion.span
                 key={i}
                 className="px-2.5 py-1 text-xs rounded-md bg-white/5 text-[var(--text-secondary)] border border-white/10"
@@ -351,7 +351,7 @@ export default function Hero() {
               className="px-2.5 py-1 text-xs rounded-md bg-white/5 text-[var(--text-secondary)] border border-white/10 cursor-pointer"
               whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
             >
-              +12 more
+              +15 more
             </motion.span>
           </motion.div>
         </motion.div>
@@ -398,71 +398,56 @@ export default function Hero() {
                     <div className="flex pl-8">
                       <span className="text-slate-500 w-8">02</span>
                       <span className="text-emerald-400">name:</span>
-                      <span className="text-amber-300 mx-2">'Elijah Ondiek'</span>
-                      <span className="text-white">,</span>
+                      <span className="text-amber-300 mx-2">"Charles Ochieng"</span>
                     </div>
                     <div className="flex pl-8">
                       <span className="text-slate-500 w-8">03</span>
                       <span className="text-emerald-400">role:</span>
-                      <span className="text-amber-300 mx-2">'Software Engineer'</span>
-                      <span className="text-white">,</span>
+                      <span className="text-amber-300 mx-2">"Cloud Infrastructure & DevOps Engineer"</span>
                     </div>
                     <div className="flex pl-8">
                       <span className="text-slate-500 w-8">04</span>
-                      <span className="text-emerald-400">company:</span>
-                      <span className="text-amber-300 mx-2">'Safaricom PLC'</span>
-                      <span className="text-white">,</span>
+                      <span className="text-emerald-400">specializes:</span>
+                      <span className="text-white mx-2">["AWS", "Kubernetes", "DevOps"]</span>
                     </div>
                     <div className="flex pl-8">
                       <span className="text-slate-500 w-8">05</span>
-                      <span className="text-emerald-400">skills:</span>
-                      <span className="text-white mx-2">[</span>
-                    </div>
-                    <div className="flex pl-16">
-                      <span className="text-slate-500 w-8">06</span>
-                      <span className="text-amber-300">'React'</span>
-                      <span className="text-white">,</span>
-                      <span className="text-amber-300 ml-2">'TypeScript'</span>
-                      <span className="text-white">,</span>
-                      <span className="text-amber-300 ml-2">'Node.js'</span>
-                      <span className="text-white">,</span>
-                    </div>
-                    <div className="flex pl-16">
-                      <span className="text-slate-500 w-8">07</span>
-                      <span className="text-amber-300">'Python'</span>
-                      <span className="text-white">,</span>
-                      <span className="text-amber-300 ml-2">'AWS'</span>
-                      <span className="text-white">,</span>
-                      <span className="text-amber-300 ml-2">'GraphQL'</span>
+                      <span className="text-emerald-400">certifications:</span>
+                      <span className="text-white mx-2">["AWS Solutions Architect"]</span>
                     </div>
                     <div className="flex pl-8">
-                      <span className="text-slate-500 w-8">08</span>
+                      <span className="text-slate-500 w-8">06</span>
+                      <span className="text-emerald-400">passion:</span>
+                      <span className="text-amber-300 mx-2">"Infrastructure Automation"</span>
+                    </div>
+                    <div className="flex pl-8">
+                      <span className="text-slate-500 w-8">07</span>
                       <span className="text-white">]</span>
                       <span className="text-white">,</span>
                     </div>
                     <div className="flex pl-8">
-                      <span className="text-slate-500 w-8">09</span>
+                      <span className="text-slate-500 w-8">08</span>
                       <span className="text-emerald-400">projects:</span>
                       <span className="text-purple-400 mx-2">() =&gt;</span>
                       <span className="text-white">fetchProjects()</span>
                       <span className="text-white">,</span>
                     </div>
                     <div className="flex pl-8">
-                      <span className="text-slate-500 w-8">10</span>
+                      <span className="text-slate-500 w-8">09</span>
                       <span className="text-emerald-400">contact:</span>
                       <span className="text-white mx-2">{"{"}</span>
                     </div>
                     <div className="flex pl-16">
-                      <span className="text-slate-500 w-8">11</span>
+                      <span className="text-slate-500 w-8">10</span>
                       <span className="text-emerald-400">email:</span>
                       <span className="text-amber-300 mx-2">'eochieng9448@gmail.com'</span>
                     </div>
                     <div className="flex pl-8">
-                      <span className="text-slate-500 w-8">12</span>
+                      <span className="text-slate-500 w-8">11</span>
                       <span className="text-white">{"}"}</span>
                     </div>
                     <div className="flex">
-                      <span className="text-slate-500 w-8">13</span>
+                      <span className="text-slate-500 w-8">12</span>
                       <span className="text-white">{"}"}</span>
                     </div>
                   </div>
